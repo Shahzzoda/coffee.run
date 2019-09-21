@@ -28,7 +28,7 @@ class Confirmation extends React.Component {
             <p className="card-text">Notes: No sugar</p>
             <hr/>
             <p>Total Price: $4.65</p>
-            <Link to={{ pathname: '/confirmation' }}>
+            <Link to={{ pathname: '/receipt' }}>
               <a href="#" className="btn btn-primary">Accept Order</a>
             </Link>
           </div>
