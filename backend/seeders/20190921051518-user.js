@@ -7,7 +7,10 @@ module.exports = {
       lastName: 'Cena',
       email: 'johndoe@email.com',
       password: 'password',
+      school: 'Brooklyn College',
       phone: '9171234567',
+      balance: 20.0,
+      rating: 5.0,
       createdAt: new Date(),
       updatedAt: new Date(),
     }], {});
