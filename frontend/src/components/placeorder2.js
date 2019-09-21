@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 class PlaceOrder2 extends React.Component {
   render() {
+    fetch(`http://localhost:8000/twilio-placeorder`);
     return(
       <div>
         <h1 id="coffee-run-header" className="text-center">

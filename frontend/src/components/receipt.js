@@ -13,6 +13,7 @@ class Receipt extends React.Component {
       >
       </GoogleMap>
     ));
+    fetch(`http://localhost:8000/twilio-order-accepted`);
     return(
       <div>
         <h1 id="coffee-run-header" className="text-center">
