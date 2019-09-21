@@ -87,9 +87,8 @@ class PlaceOrder extends React.Component {
                 <h4>Total:
                 <span> ${(this.state.total+(this.state.total * 0.25)).toFixed(2)}</span> </h4>
 
-                <Link to={{ pathname: '/finishRun'}}>
-                <a href='#' className="btn btn-primary"> Confrim Order
-                </a>
+                <Link to={{ pathname: '/placeOrder2'}}>
+                  <a href='#' className="btn btn-primary">Confirm Order</a>
                 </Link>
             
         </div>

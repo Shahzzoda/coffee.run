@@ -10,6 +10,7 @@ import Confirmation from './components/confirmation/confirmation';
 import Receipt from './components/receipt';
 import Receipt2 from './components/receipt2';
 import FinishRun from './components/finishRun';
+import PlaceOrder2 from './components/placeorder2';
 
 class Routes extends Component {
     render() {
@@ -26,6 +27,7 @@ class Routes extends Component {
                   <Route path='/receipt' component={Receipt}/>
                   <Route path='/receipt2' component={Receipt2}/>
                   <Route path='/finishRun' component={FinishRun}/>
+                  <Route path='/placeOrder2' component={PlaceOrder2}/>
                 </Switch>
             </main>
         )
