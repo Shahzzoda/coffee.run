@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "DB_USERNAME",
-    "password": "DB_PASSWORD",
-    "database": "APP_development",
+    "username": "coffeerun",
+    "password": "password",
+    "database": "coffeerun_dev",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
   "test": {
-    "username": "DB_USERNAME",
-    "password": "DB_PASSWORD",
-    "database": "APP_test",
+    "username": "root",
+    "password": null,
+    "database": "coffeerun_test",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
   "production": {
-    "username": "DB_USERNAME",
-    "password": "DB_PASSWORD",
-    "database": "APP_production",
+    "username": "root",
+    "password": null,
+    "database": "coffeerun_production",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   }
