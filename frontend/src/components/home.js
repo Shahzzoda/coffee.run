@@ -9,12 +9,14 @@ class Home extends React.Component {
         <Header/>
         <div id="logo">
           <embed src="https://www.genetichealing.in/wp-content/uploads/2018/04/coffee-running.gif" alt="Running Coffee gif" />
-          <Link to={{ pathname: '/login' }}>
-            <a>Login</a>
-          </Link>
-          <Link to={{ pathname: '/register' }}>
-            <a>Register</a>
-          </Link>
+          <div id="login" className="button-group">
+            <Link to={{ pathname: '/login' }}>
+              <button>Login</button>
+            </Link>
+            <Link to={{ pathname: '/register' }}>
+              <button>Register</button>
+            </Link>
+          </div>
         </div>
       </div>
     );

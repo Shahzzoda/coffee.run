@@ -17,3 +17,17 @@ embed {
   max-width: 60vw;
 }
 
+.button-group {
+  padding: 20px 0;
+}
+
+.button-group button {
+  border-radius: 5px;
+  min-width: 80px;
+  outline-style: none;
+  background-color: bisque;
+}
+
+.button-group button:first-child {
+  margin: 0 10px 0 0;
+}
