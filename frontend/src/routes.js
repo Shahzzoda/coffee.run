@@ -7,6 +7,9 @@ import PlaceOrder from './components/placeorder';
 import Profile from './components/profile';
 import Orders from './components/orders/orders';
 import Confirmation from './components/confirmation/confirmation';
+import Receipt from './components/receipt';
+import Receipt2 from './components/receipt2';
+import FinishRun from './components/finishRun';
 
 class Routes extends Component {
     render() {
@@ -20,6 +23,9 @@ class Routes extends Component {
                   <Route path='/profile' component={Profile}/>
                   <Route path='/orders' component={Orders}/>
                   <Route path='/confirmation' component={Confirmation}/>
+                  <Route path='/receipt' component={Receipt}/>
+                  <Route path='/receipt2' component={Receipt2}/>
+                  <Route path='/finishRun' component={FinishRun}/>
                 </Switch>
             </main>
         )
