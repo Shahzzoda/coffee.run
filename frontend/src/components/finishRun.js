@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Confetti from 'react-confetti';
 
 
 class FinishRun extends React.Component {
   render() {
     return(
       <div>
+        <Confetti/>
         <h1 id="coffee-run-header" className="text-center">
           <Link to={{ pathname: '/' }}>
             <a><i className="material-icons">keyboard_arrow_left</i>Home<i className="material-icons">keyboard_arrow_right</i></a> 
