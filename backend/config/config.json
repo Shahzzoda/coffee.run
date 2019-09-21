@@ -2,7 +2,7 @@
   "development": {
     "username": "coffeerun",
     "password": "password",
-    "database": "coffeerun_dev",
+    "database": "coffeerun_db",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
