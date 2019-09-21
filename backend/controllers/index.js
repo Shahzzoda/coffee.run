@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.json({
+      msg: "Successful GET to '/' route"
+  });
+});
 
-router.use('/alt', require('./alt'));
-router.use('/', require('./home'));
+router.use('/users', require('./users'));
 
 
 module.exports = router;
