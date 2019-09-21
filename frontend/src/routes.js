@@ -5,19 +5,21 @@ import Register from './components/register';
 import Home from './components/home';
 import PlaceOrder from './components/placeorder';
 import Profile from './components/profile';
-import Orders from './components/orders';
+import Orders from './components/orders/orders';
+import Confirmation from './components/confirmation/confirmation';
 
 class Routes extends Component {
     render() {
         return (
             <main>
                 <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route path='/login' component={Login}/>
-                    <Route path='/register' component={Register}/>
-                    <Route path='/placeorder' component={PlaceOrder}/>
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/orders' component={Orders}/>
+                  <Route exact path='/' component={Home} />
+                  <Route path='/login' component={Login}/>
+                  <Route path='/register' component={Register}/>
+                  <Route path='/placeorder' component={PlaceOrder}/>
+                  <Route path='/profile' component={Profile}/>
+                  <Route path='/orders' component={Orders}/>
+                  <Route path='/confirmation' component={Confirmation}/>
                 </Switch>
             </main>
         )
