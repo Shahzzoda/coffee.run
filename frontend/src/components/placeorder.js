@@ -38,19 +38,19 @@ class PlaceOrder extends React.Component {
                     </Link>
                 </h1>
                 
-                <span>Store 
-                    <div class="dropdown">
-                     <select>
-                        <option value="Starbucks">Starbucks</option>
-                        <option value="Seawolves Cafe">Seawolves Cafe</option>
-                        <option value="Dunkin' Dounts">Dunkin' Dounts</option>
-                    </select>
-                    </div> 
-                </span> 
+                    <span>Store 
+                        <div class="dropdown">
+                        <select className="form-control col-12 mb-3">
+                            <option value="Starbucks">Starbucks</option>
+                            <option value="Seawolves Cafe">Seawolves Cafe</option>
+                            <option value="Dunkin' Dounts">Dunkin' Dounts</option>
+                        </select>
+                        </div> 
+                    </span> 
                 
                 <span> QTY 
                     <div class="dropdown">
-                    <select onChange ={(event) => this.getQuantity(event)}>
+                    <select  className="form-control col-12 mb-3" onChange ={(event) => this.getQuantity(event)}>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -60,7 +60,7 @@ class PlaceOrder extends React.Component {
                 
                 <span>Order 
                     <div class="dropdown">
-                    <select onChange={(event) => this.getPrice(event) }>
+                    <select className="form-control col-12 mb-3" onChange={(event) => this.getPrice(event) }>
                         <option value="2.00">Small Coffee - $2.00</option>
                         <option value="3.00">Medium Coffee - $3.00</option>
                         <option value="4.00">Large Coffee -$4.00</option>
@@ -69,12 +69,12 @@ class PlaceOrder extends React.Component {
                 </span>
                 
                 <h6>Order Details</h6>
-                <textarea rows="4" cols="50"> </textarea>
+                <input className="form-control col-12 mb-3"/>
                 
                 <h6>Location</h6>
                 <span> 
                     <div class="dropdown">
-                     <select>
+                     <select className="form-control col-12 mb-3">
                         <option value="Library">Frank Melville Jr. Memorial Library</option>
                         <option value="Physics">Physics</option>
                         <option value="Chem">Chemisty</option>
@@ -84,8 +84,14 @@ class PlaceOrder extends React.Component {
                     </div> 
                 </span> 
 
-                <h6>Total</h6>
-                <p>${(this.state.total+(this.state.total * 0.25)).toFixed(2)}</p>
+                <h4>Total:
+                <span> ${(this.state.total+(this.state.total * 0.25)).toFixed(2)}</span> </h4>
+
+                <Link to={{ pathname: '/finishRun'}}>
+                <a href='#' className="btn btn-primary"> Confrim Order
+                </a>
+                </Link>
+            
         </div>
         );
     }
