@@ -15,6 +15,12 @@ class Home extends React.Component {
         </h1>
         <div id="logo">
           <embed src="https://www.genetichealing.in/wp-content/uploads/2018/04/coffee-running.gif" alt="Running Coffee gif" />
+          <Link to={{ pathname: '/login' }}>
+            <a>Login</a>
+          </Link>
+          <Link to={{ pathname: '/register' }}>
+            <a>Register</a>
+          </Link>
         </div>
       </div>
     );
