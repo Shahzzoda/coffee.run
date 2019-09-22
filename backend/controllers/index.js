@@ -3,8 +3,8 @@ const router = express.Router();
 // Download the helper library from https://www.twilio.com/docs/node/install
 // Your Account Sid and Auth Token from twilio.com/console
 // DANGER! This is insecure. See http://twil.io/secure
-const accountSid = 'ACafc9c023f5de4699a121ab1ba6a27833';
-const authToken = '508d05d09fb4f22fb75500a4e73c8d14';
+const accountSid = 'account id here';
+const authToken = 'auth token here';
 const client = require('twilio')(accountSid, authToken);
 
 router.get('/twilio-placeorder', (req, res) => {
